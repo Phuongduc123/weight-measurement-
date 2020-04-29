@@ -1,0 +1,168 @@
+@import "./_config";
+
+$primary-color: #097dc6;
+$text-color: #848a8c;
+$hover-text-color: #fc616e;
+
+body,
+head {
+  top: 0;
+  margin: 0;
+}
+.top-banner {
+  background-color: $primary-color;
+  height: 100px;
+  &-image {
+    display: block;
+    margin: auto;
+    height: 100%;
+  }
+}
+
+.headbar {
+  background-color: #eee;
+  border-bottom: 1px solid lightgrey;
+  padding: 1rem;
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    margin: auto;
+    font-weight: bold;
+
+    .pages-link {
+      font-family: "Open Sans", sans-serif;
+      a {
+        padding-left: 20px;
+        color: $text-color;
+        &:first-child {
+          font-size: large;
+          color: black;
+        }
+        &:hover {
+          color: $hover-text-color;
+          @include transition-ease;
+        }
+      }
+    }
+    .profile {
+      font-family: "Baloo Paaji 2", cursive;
+      font-size: large;
+      a {
+        padding-right: 20px;
+        color: $text-color;
+        &:first-child {
+          color: $hover-text-color;
+        }
+        &:hover {
+          color: $hover-text-color;
+          @include transition-ease;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  &-container {
+    display: flex;
+    width: 1024px;
+    height: max-content;
+    .navigation-col {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+
+      .navigation-back {
+        font-size: large;
+        padding: 20px;
+        a {
+          color: $text-color;
+          &:hover {
+            color: $hover-text-color;
+            @include transition-ease;
+          }
+
+          i {
+            color: $hover-text-color;
+            margin-right: 8px;
+            font-size: larger;
+          }
+        }
+      }
+      .navigation-menu {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        a {
+          padding: 20px;
+          color: black;
+          &:hover {
+            color: $hover-text-color;
+            @include transition-ease;
+          }
+          &:nth-child(4) {
+            background-color: #d82d89;
+            color: white;
+          }
+        }
+      }
+    }
+    .lesson-col {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      font-family: "Open Sans", sans-serif;
+
+      .lesson-path {
+        font-size: small;
+        padding: 30px 0 10px 30px;
+        a {
+          color: black;
+          padding-left: 2px;
+          padding-right: 2px;
+          &:hover {
+            color: $hover-text-color;
+            @include transition-ease;
+          }
+        }
+      }
+      .lesson-title {
+        display: block;
+        margin-left: 50%;
+        font-size: larger;
+      }
+
+      .lesson-blocks {
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+        .game {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-family: "Open Sans", sans-serif;
+          padding: 50px 10px;
+          a {
+            color: black;
+            img {
+              border: 5px solid #afd1a7;
+              border-radius: 5%;
+            }
+          }
+          &:hover a {
+            color: $hover-text-color;
+            @include transition-ease;
+          }
+        }
+      }
+    }
+  }
+}

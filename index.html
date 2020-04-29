@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head style="margin: 0;">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2|Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./style/main-style.css">
-    <script src="https://kit.fontawesome.com/7bf17917d7.js" crossorigin="anonymous"></script>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./scss/main.css" />
+    <script
+      src="https://kit.fontawesome.com/7bf17917d7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-    <div class="top-banner-background">
-        <a href="https://ncov.moh.gov.vn/">
-            <img id="top-banner" src="./images/main-page/corona-top-banner.jpg" alt="corona banner">
-        </a>
+  <body>
+    <div class="top-banner">
+      <img
+        class="top-banner-image"
+        src="./images/main-page/banner.svg"
+        alt="corona banner"
+      />
     </div>
     <div class="headbar">
-        <div class="headbar-content">
-            <div class="home"><a href="#" style="text-decoration: none; color: black;">DRAGONLEARN.IN</a></div>
-            <div class="main-pages">
-                <a href="#" style="padding-left: 50px;">Main page</a>
-                <a href="#" style="padding-left: 20px;">My classes</a>
-                <a href="#" style="padding-left: 20px;">Portfolio</a>
-            </div>
-            <div class="profile">
-                <a href="#" style="color: #004A78;">Invite a colleague</a>
-                <a href="#">Profile</a>
-            </div>
+      <div class="headbar-content">
+        <div class="pages-link">
+          <a href="#!">DRAGONLEARN.IN</a>
+          <a href="#!">Main page</a>
+          <a href="#!">My classes</a>
+          <a href="#!">Portfolio</a>
         </div>
+        <div class="profile">
+          <a href="#">Invite a colleague</a>
+          <a href="#">Profile</a>
+        </div>
+      </div>
     </div>
     <div class="main">
-        <div class="main-container">
-            <div class="navigation-col">
-                <div class="navigation-back">
-                    <a href="#"><i class="fas fa-chevron-circle-left"></i>Back</a>
-                </div>
-                <div class="navigation-menu">
-                    <a href="#">Numbers</a>
-                    <a href="#">Operators</a>
-                    <a href="#">Geometry</a>
-                    <a href="#">Measurement</a>
-                    <a href="#">Secret Lab</a>
-                </div>
-            </div>
-            <div class="lesson-col">
-                <div class="lesson-path">
-                    <a href="#">Programme</a>   <i class="fas fa-angle-right"></i>
-                    <a href="#">Measurement</a> <i class="fas fa-angle-right"></i>
-                    <a href="index.html"><b>Weight</b></a>
-                </div>
-                <div class="lesson-title">
-                    <h3>Weight</h3>
-                </div>
-                <div class="lesson-blocks">
-                    <div class="game-1">
-                        <a href="#">
-                            <img src="./images/main-page/lesson1.png" alt="lesson 1 preview">
-                        </a>
-                        <a href="#">Balance the scales</a>
-                    </div>
-                    <div class="game-2">
-                        <a href="#">
-                            <img src="./images/main-page/lesson2.png" alt="lesson 2 preview">
-                        </a>
-                        <a href="#">Find out how much the toys weigh</a>
-                    </div>
-                </div>
-            </div>
+      <div class="main-container">
+        <div class="navigation-col">
+          <div class="navigation-back">
+            <a href="#"><i class="fas fa-chevron-circle-left"></i>Back</a>
+          </div>
+          <div class="navigation-menu">
+            <a href="#">Numbers</a>
+            <a href="#">Operators</a>
+            <a href="#">Geometry</a>
+            <a href="#">Measurement</a>
+            <a href="#">Secret Lab</a>
+          </div>
         </div>
+        <div class="lesson-col">
+          <div class="lesson-path">
+            <a href="#">Programme</a> <i class="fas fa-angle-right"></i>
+            <a href="#">Measurement</a> <i class="fas fa-angle-right"></i>
+            <a href="index.html"><b>Weight</b></a>
+          </div>
+          <div class="lesson-title">
+            <h3>Weight</h3>
+          </div>
+          <div class="lesson-blocks">
+            <div class="game">
+              <a href="game1.html">
+                <img
+                  src="./images/main-page/lesson1.png"
+                  alt="lesson 1 preview"
+                />
+              </a>
+              <a href="#">Balance the scales</a>
+            </div>
+            <div class="game">
+              <a href="game2.html">
+                <img
+                  src="./images/main-page/lesson2.png"
+                  alt="lesson 2 preview"
+                />
+              </a>
+              <a href="#">Find out how much the toys weigh</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

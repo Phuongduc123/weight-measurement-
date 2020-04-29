@@ -1,0 +1,253 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* :-webkit-any-link {
+  text-decoration: none;
+}
+
+* :-moz-any-link {
+  text-decoration: none;
+}
+
+* :any-link {
+  text-decoration: none;
+}
+
+body,
+head {
+  top: 0;
+  margin: 0;
+}
+
+.top-banner {
+  background-color: #097dc6;
+  height: 100px;
+}
+
+.top-banner-image {
+  display: block;
+  margin: auto;
+  height: 100%;
+}
+
+.headbar {
+  background-color: #eee;
+  border-bottom: 1px solid lightgrey;
+  padding: 1rem;
+}
+
+.headbar-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1024px;
+  margin: auto;
+  font-weight: bold;
+}
+
+.headbar-content .pages-link {
+  font-family: "Open Sans", sans-serif;
+}
+
+.headbar-content .pages-link a {
+  padding-left: 20px;
+  color: #848a8c;
+}
+
+.headbar-content .pages-link a:first-child {
+  font-size: large;
+  color: black;
+}
+
+.headbar-content .pages-link a:hover {
+  color: #fc616e;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.headbar-content .profile {
+  font-family: "Baloo Paaji 2", cursive;
+  font-size: large;
+}
+
+.headbar-content .profile a {
+  padding-right: 20px;
+  color: #848a8c;
+}
+
+.headbar-content .profile a:first-child {
+  color: #fc616e;
+}
+
+.headbar-content .profile a:hover {
+  color: #fc616e;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1024px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.main-container .navigation-col {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.main-container .navigation-col .navigation-back {
+  font-size: large;
+  padding: 20px;
+}
+
+.main-container .navigation-col .navigation-back a {
+  color: #848a8c;
+}
+
+.main-container .navigation-col .navigation-back a:hover {
+  color: #fc616e;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.main-container .navigation-col .navigation-back a i {
+  color: #fc616e;
+  margin-right: 8px;
+  font-size: larger;
+}
+
+.main-container .navigation-col .navigation-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-container .navigation-col .navigation-menu a {
+  padding: 20px;
+  color: black;
+}
+
+.main-container .navigation-col .navigation-menu a:hover {
+  color: #fc616e;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.main-container .navigation-col .navigation-menu a:nth-child(4) {
+  background-color: #d82d89;
+  color: white;
+}
+
+.main-container .lesson-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-container .lesson-col .lesson-path {
+  font-size: small;
+  padding: 30px 0 10px 30px;
+}
+
+.main-container .lesson-col .lesson-path a {
+  color: black;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.main-container .lesson-col .lesson-path a:hover {
+  color: #fc616e;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.main-container .lesson-col .lesson-title {
+  display: block;
+  margin-left: 50%;
+  font-size: larger;
+}
+
+.main-container .lesson-col .lesson-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+}
+
+.main-container .lesson-col .lesson-blocks .game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Open Sans", sans-serif;
+  padding: 50px 10px;
+}
+
+.main-container .lesson-col .lesson-blocks .game a {
+  color: black;
+}
+
+.main-container .lesson-col .lesson-blocks .game a img {
+  border: 5px solid #afd1a7;
+  border-radius: 5%;
+}
+
+.main-container .lesson-col .lesson-blocks .game:hover a {
+  color: #fc616e;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+/*# sourceMappingURL=main.css.map */
